@@ -69,7 +69,7 @@ return(
 )
   }
   else {
-    return (
+    return ( 
 
       <div className="App">
         <div className="outerBlock">
