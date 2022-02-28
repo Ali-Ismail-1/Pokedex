@@ -20,7 +20,7 @@ function App() {
     (async () => {
       // with Async/Await
       try {
-        const pokemonSpecial = await P.getPokemonByName(
+        await P.getPokemonByName(
           mySeed,
           (response, error) => {
             // with callback
@@ -55,7 +55,7 @@ function App() {
     setMySeed(Math.floor(Math.random() * (max - min + 1)) + min);
   };
 
-  if (myName == ""){
+  if (myName === ""){
 return(
   <div className="App">
     <div className="outerBlock">
@@ -75,7 +75,7 @@ return(
         <div className="outerBlock">
           <div className="innerBlock">
         <h1>{myName}</h1>
-        <img className="pokeImage" alt="Unrendered Image" src={myImage} /> <br />
+        <img className="pokeImage" alt="" src={myImage} /> <br />
         Hp: {myHp} <br />
         Attack: {myAttack} <br />
         Defense: {myDefense} <br />
